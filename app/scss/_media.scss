@@ -1,3 +1,150 @@
-@media (max-width: 1150px) {
-  
+@media (max-width: 950px) {
+  .header {
+    background-position: initial;
+  }
+}
+@media (max-width: 650px) {
+  .header {
+    &__descr {
+      font-size: 20px;
+    }
+    & .typed-cursor {
+    font-size: 25px;
+    }
+  }
+.menu__btn {
+  display: block;
+}
+.menu__btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #000;
+	transition: all 0.5s;
+}
+
+.menu__btn span:nth-of-type(2) {
+	top: calc(50% - 10px);
+}
+.menu__btn span:nth-of-type(3) {
+	top: calc(50% + 10px);
+}
+
+.menu {
+  position: absolute;
+    transform: translateY(-200%);
+    transition: all 0.2s;
+    z-index: 9;
+    margin-top: 20px;
+    display: block;
+    border: none;
+    background-color: #54cff0;
+    padding: 10px 0;
+    left: 0;
+    right: 0;
+    &__list-link {
+      text-align: center;
+    display: block;
+    padding: 10px;
+    &:hover {
+      border: 1px solid #fff;
+    }
+    }
+    &__list-link[href="tel:+1111111100"], &__list-link[href="mailto:hello@nlab.com"] {
+      padding-left: 10px;
+    }
+    &__list-phone {
+      left: 20px;
+      top: 8px;
+    }
+    &__list-envelope {
+      top: 8px;
+    }
+}
+
+.menu.active {
+	transform: translateX(0);
+}
+
+.menu__btn.active span:first-of-type {
+	transform: translateX(100%);
+}
+
+.menu__btn.active span:nth-of-type(2) {
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu__btn.active span:nth-of-type(3) {
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+.header-info {
+  &__title {
+    font-size: 18px;
+  }
+  &__title-text {
+    width: 400px;
+    &::after {
+      width: 392px;
+      top: 87px;
+    }
+  }
+}
+}
+@media (max-width: 500px) { 
+  .header-info {
+  &__title span {
+    font-size: 16px;
+  }
+  &__title-text {
+    width: 350px;
+    font-size: 15px;
+    &::after {
+      width: 313px;
+      top: 75px;
+    }
+  }
+}
+}
+@media (max-width: 420px) {
+  .header {
+    &__descr {
+      font-size: 15px;
+    }
+    &__descr--typed {
+      height: 10px;
+    }
+    & .typed-cursor {
+    font-size: 20px;
+    }
+    &__button {
+      font-size: 9px;
+    }
+  } 
+  .header-info {
+  &__title span {
+    font-size: 13px;
+  }
+  &__title-text {
+    width: 232px;
+    font-size: 11px;
+    margin-bottom: 70px;
+    &::after {
+      width: 232px;
+      top: 60px;
+    }
+  }
+  &__text {
+    width: 200px;
+    font-size: 10px;
+    line-height: 11px;
+    &::after {
+      top: 0;
+    }
+  }
+}
 }

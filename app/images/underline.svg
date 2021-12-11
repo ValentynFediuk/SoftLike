@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="529" height="6" viewBox="0 0 529 6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3652e4;
+        stroke-width: 3px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="underline" class="cls-1" d="M432,329H958" transform="translate(-430.5 -327.5)"/>
+</svg>
