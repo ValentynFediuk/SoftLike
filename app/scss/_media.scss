@@ -99,6 +99,14 @@
 }
 }
 @media (max-width: 500px) { 
+  .header {
+    &__top {
+      margin-bottom: 50px;
+    }
+    &__descr {
+      margin-bottom: 30px;
+    }
+  }
   .arrow {
   --h:265px;   /* height */
 }
