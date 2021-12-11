@@ -41,7 +41,7 @@ body {
     position: absolute;
   }
   &__button {
-    animation: appear 8s;
+    animation: appear 3s;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -133,6 +133,7 @@ body {
     font-weight: 500;
     font-size: 22px;
     margin-bottom: 22px;
+    display: inline-block;
   }
   &__title .cls-1 {
     fill: #54cff0;
@@ -184,7 +185,7 @@ body {
   }
 }
 .arrow {
-  --h:250px;   /* height */
+  --h:280px;   /* height */
   --w:20px;    /* width */
   --b:9px;     /* width of the dash*/
   --g:3px;     /* gap between dashes*/
@@ -195,7 +196,7 @@ body {
   position: absolute;
   top: -3px;
   left: 0;
-  animation:hide 2 linear forwards 2s;
+  animation:hide 1s linear forwards 2s;
 }
 .arrow:before,
 .arrow:after{
@@ -219,7 +220,7 @@ body {
 }
 @keyframes hide {
   100% {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 }
 @keyframes appear {
