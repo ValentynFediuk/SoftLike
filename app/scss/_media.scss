@@ -1,6 +1,85 @@
+@media (max-width: 1200px) {
+  .footer {
+    &__form-wrapper {
+      &::before {
+        left: -279px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .footer {
+    background-position: initial;
+    &__form-wrapper {
+      &::before {
+        display: none;
+      }
+    }
+    &__form-textarea {
+      margin-bottom: 200px;
+    }
+    &__form-button {
+      bottom: 90px;
+      left: 0;
+    }
+  }
+  .copy {
+    color: #fff;
+  }
+}
 @media (max-width: 950px) {
   .header {
     background-position: initial;
+  }
+  
+}
+@media (max-width: 800px) {
+  .footer {
+    &__form-wrapper {
+      width: 100%
+
+    }
+    &__form {
+      flex-direction: column;
+    }
+    &__form-input, &__form-textarea {
+      width: 100%;
+    }
+    &__form-textarea {
+
+    }
+    &__form-button {
+      max-width: initial;
+      width: 100%;
+    }
+    &__logo {
+      &::before {
+        left: 60px;
+        top: -38px;
+      }
+    }
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    &-menu {
+      width: initial;
+    }
+    &-menu .menu__list-link:hover  {
+      border: none;
+    }
+    &-menu .menu__list-phone {
+          top: -30px;
+          left: 78px;
+    }
+    &-menu .menu__list-envelope {
+      top: -30px;
+      left: 85px;
+    }
+  }
+  .copy {
+    align-self: initial;
   }
 }
 @media (max-width: 650px) {
@@ -97,6 +176,36 @@
     }
   }
 }
+  .footer {
+    &__form-wrapper {
+      margin-left: 0;
+    }
+    &__logo {
+      &::before {
+        left: 30px;
+        top: -38px;
+      }
+    }
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    &-menu {
+      width: initial;
+    }
+    &-menu .menu__list-link:hover  {
+      border: none;
+    }
+    &-menu .menu__list-phone {
+      top: -20px;
+      left: 40px;
+    }
+    &-menu .menu__list-envelope {
+      top: -20px;
+      left: 45px;
+    }
+  }
 }
 @media (max-width: 500px) { 
   .header {
@@ -172,4 +281,28 @@
     }
   }
 }
+  .footer {
+    &__title {
+      font-size: 23px;
+    }
+    &__form-button {
+    padding: 17px 50px;
+    }
+    & .menu__list-link {
+      padding: 8px;
+    }
+    &__logo::before {
+      left: 28px;
+    }
+  }
+  .footer__bottom {
+    &-menu .menu__list-phone {
+      top: -20px;
+      left: 38px;
+    }
+    &-menu .menu__list-envelope {
+      top: -20px;
+      left: 43px;
+    }
+  }
 }

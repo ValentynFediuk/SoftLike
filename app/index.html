@@ -85,7 +85,49 @@
   </section>
   <footer class="footer">
     <div class="container">
-
+      <div class="footer__inner">
+        <h2 class="footer__title title">
+          If you have <br> any more questions:
+        </h2>
+        <div class="footer__form-wrapper">
+          <form class="footer__form" id="form1">
+            <input class="footer__form-input" placeholder="Your name" type="text">
+            <input class="footer__form-input" placeholder="Your e-mail address" type="text">
+            <textarea class="footer__form-textarea" placeholder="Your e-mail address"></textarea>
+          </form>
+          <button class="footer__form-button" type="submit" form="form1" value="Submit">Send your message</button>
+        </div>
+        <div class="footer__bottom">
+          <nav class="nav">
+            <ul class="footer__bottom-menu">
+              <li class="menu__list-item">
+                <a class="menu__list-link footer__logo" href="#">
+                  Logo
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link phone-icon" href="tel:+1111111100">
+                  <svg class="menu__list-phone" width="20" height="20">
+                    <use xlink:href="images/icons.svg#phone"></use>
+                  </svg>
+                  +1111111100
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link envelope-icon" href="mailto:hello@nlab.com">
+                  <svg class="menu__list-envelope" width="22" height="20">
+                    <use xlink:href="images/icons.svg#envelope"></use>
+                  </svg>
+                  hello@nlab.com
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p class="copy">
+              &#169; 2007-2019, Networking Lab
+          </p>
+        </div>
+      </div>
     </div>    
   </footer>
 
